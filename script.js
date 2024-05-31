@@ -1,6 +1,6 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
     // Set the target date for the countdown
-    var targetDate = moment.tz("2024-07-01 00:00", "America/New_York");
+    var targetDate = moment("2024-07-01 00:00:00");
 
     function updateCountdown() {
         var now = moment();
@@ -11,7 +11,11 @@ $(document).ready(function() {
         var minutes = duration.minutes();
         var seconds = duration.seconds();
 
-        $('#countdown').html(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
+        document.getElementById('countdown').innerHTML =
+            '<div><span>' + days + '</span>Days</div>' +
+            '<div><span>' + hours + '</span>Hours</div>' +
+            '<div><span>' + minutes + '</span>Minutes</div>' +
+            '<div><span>' + seconds + '</span>Seconds</div>';
     }
 
     setInterval(updateCountdown, 1000);

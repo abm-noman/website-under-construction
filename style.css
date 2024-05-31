@@ -1,49 +1,119 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #f4f4f4;
 }
 
 .container {
-    text-align: center;
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
     background-color: #fff;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-.hawk-image {
-    max-width: 100%;
-    height: auto;
+.left-content, .right-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.left-content h1 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 1.5em;
+.left-content p {
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
-.countdown {
-    font-size: 2em;
+.email-notify {
+    display: flex;
     margin-bottom: 20px;
+}
+
+.email-notify input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.email-notify button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff4b2b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.email-notify button:hover {
+    background-color: #ff3a1b;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .social-links a {
+    font-size: 1.5em;
+    color: #333;
     margin: 0 10px;
     text-decoration: none;
-    color: #007BFF;
 }
 
 .social-links a:hover {
-    text-decoration: underline;
+    color: #ff4b2b;
+}
+
+.right-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.right-content img {
+    width: 100%;
+    height: auto;
+}
+
+.countdown {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.countdown div {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.countdown span {
+    display: block;
+    font-size: 2em;
 }
