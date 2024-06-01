@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
         var seconds = duration.seconds();
 
         document.getElementById('countdown').innerHTML =
-            '<div><span>' + days + '</span>Days</div>' +
-            '<div><span>' + hours + '</span>Hours</div>' +
-            '<div><span>' + minutes + '</span>Minutes</div>' +
-            '<div><span>' + seconds + '</span>Seconds</div>';
+            '<div id="days" class="mx-2"><span>' + days + '</span>Days</div>' +
+            '<div id="hours" class="mx-2"><span>' + hours + '</span>Hours</div>' +
+            '<div id="minutes" class="mx-2"><span>' + minutes + '</span>Minutes</div>' +
+            '<div id="seconds" class="mx-2"><span>' + seconds + '</span>Seconds</div>';
     }
 
     setInterval(updateCountdown, 1000);

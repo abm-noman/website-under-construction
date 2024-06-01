@@ -1,0 +1,72 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#countdown div {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 80px;
+}
+
+#countdown div span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#days span {
+    color: #ff0303; /* Color for days */
+}
+
+#hours span {
+    color: #00a2ff; /* Color for hours */
+}
+
+#minutes span {
+    color: #00ff2f; /* Color for minutes */
+}
+
+#seconds span {
+    color: #bbff00; /* Color for seconds */
+}
+
+.input-group {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFD700; /* Color change on hover */
+}
